@@ -6,4 +6,3 @@ Technology stack:
 - SAS
 - CSS
 - JS
-- VITE
