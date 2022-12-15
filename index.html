@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Starter</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rubik+Storm&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <!-- B-blok E-element M-modyfikator -- metodologia pisania -->
-  <!-- BLOCK-->
-  <section class="weather">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rubik+Storm&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <!-- B-blok E-element M-modyfikator -- metodologia pisania -->
+    <!-- BLOCK-->
+    <section class="weather">
 
     <!--ELEMENT-->
-  <!-- controls - tworzy nam postawowe kontrolki do obsługi video -->
-  <!-- loop - pętla -->
-  <!-- playsinline - odtwarza poprawnie wideo na apple -->
-  <video src="/video/snow.mp4" autoplay muted loop playsinline class="weather__bg"></video>
+    <!-- controls - tworzy nam postawowe kontrolki do obsługi video -->
+    <!-- loop - pętla -->
+    <!-- playsinline - odtwarza poprawnie wideo na apple -->
+    <video src="/video/snow.mp4" autoplay muted loop playsinline class="weather__bg"></video>
 
-  <h1 class="weather__title">Weather APP</h1>
-  <form action="" class="weather__form">
-    <input type="text" class="weather__city">
-  </form>
-  </section>
-  <script type="module" src="/main.js"></script>
-</body>
+    <h1 class="weather__title">Weather APP</h1>
+    <div class="weather__loader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <form action="" class="weather__form">
+      <input type="text" class="weather__city" value="London">
+    </form>
+    <!--Data from API-->
+    <div class="weather__data">
+    </div>
 
-
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
