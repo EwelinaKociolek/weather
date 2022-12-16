@@ -2,7 +2,7 @@ import './sass/main.scss'
 
 let cityForm = document.querySelector('.weather__form')
 let cityInput = document.querySelector('.weather__city')
-let APIURL = 'http://api.weatherapi.com/v1/current.json?key=f68f28912c724928bb8172103221512&aqi=yes&q='
+let APIURL = 'https://api.weatherapi.com/v1/current.json?key=f68f28912c724928bb8172103221512&aqi=yes&q='
 let apiView = document.querySelector('.weather__data')
 let loader = document.querySelector('.weather__loader')
 
